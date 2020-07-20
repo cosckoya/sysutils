@@ -34,7 +34,7 @@ RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/${TERR
 ARG KUBECTL_VERSION=v1.17.3
 RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl \
     --directory-prefix=/usr/local/bin/
-    
+
 # Install Helm
 ARG HELM_VERSION=v2.16.5
 ENV HELM_FILE=helm-${HELM_VERSION}-linux-amd64.tar.gz

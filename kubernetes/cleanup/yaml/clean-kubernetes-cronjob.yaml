@@ -1,0 +1,115 @@
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: cleanup
+  namespace: infrastructure
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  name: cleanup
+rules:
+  - apiGroups: ["*"]
+    resources: ["replicasets", "jobs", "pods"]
+    verbs: ["get", "list", "delete", "update"]
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: cleanup
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: cleanup
+subjects:
+- kind: ServiceAccount
+  name: cleanup
+  namespace: infrastructure
+---
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: kubernetes-cleanup
+  namespace: infrastructure
+  labels:
+    app: kubernetes-cleanup
+spec:
+  schedule: "0 5 * * *"
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        metadata:
+          name: replicationset-cleanup
+        spec:
+          serviceAccountName: cleanup
+          tolerations:
+          - effect: NoSchedule
+            operator: Exists
+          restartPolicy: OnFailure
+          containers:
+            - name: sys-utils
+              image: azure-utils:latest
+              command:
+              - /bin/cleanup.sh
+              env:
+              - name: KUBERNETES_CLEAN_DAYS
+                value: "7"
+              envFrom:
+              - secretRef:
+                  name: cron
+              volumeMounts:
+              - name: cleanup
+                mountPath: /bin/cleanup.sh
+                subPath: cleanup.sh
+                readOnly: true
+            volumes:
+            - name: cleanup
+              configMap:
+                defaultMode: 0700
+                name: cleanup
+---
+  apiVersion: v1
+  kind: ConfigMap
+  metadata:
+    name: cleanup
+    namespace: cron
+  data:
+    cleanup.sh: |-
+      #!/bin/bash
+
+      # Get rs, filter by days, filter by empty rs and select rs older than $KUBERNETES_CLEAN_DAYS days
+      emptyReplicaSets=$(kubectl get rs --all-namespaces | \
+        grep -oE '^[a-zA-Z0-9-]+\s+[a-zA-Z0-9-]+(\s+[0-9]+){4}d' | sed 's/d$//g' | \
+        grep -E '(0\s+){3}' | \
+        awk -v max=$KUBERNETES_CLEAN_DAYS '$6 > max {print $1 "|" $2}')
+
+      # Loop through empty replica sets and delete them
+      for rs in $emptyReplicaSets; do
+        IFS='|' read namespace replicaSet <<< "$rs";
+        kubectl -n $namespace delete rs $replicaSet;
+        sleep 0.25
+      done
+
+      # Get finished jobs older than 1h
+      finishedJobs=$(kubectl get jobs --all-namespaces | awk 'IF $4 == 1 && $5 ~ /h|d/ {print $1 "|" $2}')
+
+      # Loop through jobs and delete them
+      for job in $finishedJobs; do
+        IFS='|' read namespace oldJob <<< "$job";
+        kubectl -n $namespace delete job $oldJob;
+        sleep 0.25
+      done
+
+      # Get unrecycled evicted pods older than 1h
+      evictedPods=$(kubectl get pods --all-namespaces -a | grep 'Evicted' | \
+        awk 'IF $6 ~ /h|d/ {print $1 "|" $2}')
+
+      # Loop through evicted pods and delete them
+      for pod in $evictedPods; do
+        IFS='|' read namespace evictedPod <<< "$pod";
+        kubectl -n $namespace delete pod $evictedPod;
+        sleep 0.25
+      done
