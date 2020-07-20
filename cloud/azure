@@ -1,0 +1,20 @@
+FROM debian:10-slim
+
+WORKDIR /tmp
+
+# Install SysUtils
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update -qq \
+ && apt install -qq -y --no-install-recommends \
+        wget curl iputils-ping nmap \
+        unzip git \
+        default-mysql-client postgresql-client \
+        ca-certificates apt-transport-https lsb-release gnupg \
+ && rm -rf /var/lib/apt/lists/*
+
+RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
+
+RUN wget -O azcopy.tar.gz https://aka.ms/downloadazcopy-v10-linux \
+    && tar -xf azcopy.tar.gz --strip-components=1 -C /usr/local/bin \
+    && rm azcopy.tar.gz

@@ -1,0 +1,43 @@
+FROM debian:10-slim
+
+WORKDIR /tmp
+
+# Install SysUtils
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt update -qq \
+ && apt install -qq -y --no-install-recommends \
+        wget curl iputils-ping nmap \
+        unzip git \
+        default-mysql-client postgresql-client \
+        ca-certificates apt-transport-https lsb-release gnupg \
+ && rm -rf /var/lib/apt/lists/*
+
+# Install Google SDK
+RUN echo "deb https://packages.cloud.google.com/apt cloud-sdk main" | tee -a /etc/apt/sources.list.d/google-cloud-sdk.list
+
+RUN curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+
+RUN apt update -qq \
+ && apt install -qq -y --no-install-recommends \
+        google-cloud-sdk \
+ && rm -rf /var/lib/apt/lists/*
+
+# Install Terraform
+ARG TERRAFORM_VERSION=0.12.24
+ENV TERRAFORM_FILE=terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/${TERRAFORM_FILE} \
+    && unzip ${TERRAFORM_FILE} -d /usr/local/bin \
+    && rm -rf ${TERRAFORM_FILE}
+
+# Install Kubectl
+ARG KUBECTL_VERSION=v1.17.3
+RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl \
+    --directory-prefix=/usr/local/bin/
+    
+# Install Helm
+ARG HELM_VERSION=v2.16.5
+ENV HELM_FILE=helm-${HELM_VERSION}-linux-amd64.tar.gz
+RUN wget -q https://get.helm.sh/${HELM_FILE} \
+    && tar -xf ${HELM_FILE} --strip-components=1 -C /usr/local/bin \
+    && rm ${HELM_FILE}
