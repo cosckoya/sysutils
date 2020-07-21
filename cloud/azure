@@ -2,19 +2,37 @@ FROM debian:10-slim
 
 WORKDIR /tmp
 
-# Install SysUtils
+# Install basic tools
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update -qq \
  && apt install -qq -y --no-install-recommends \
-        wget curl iputils-ping nmap \
-        unzip git \
+        wget curl iputils-ping nmap unzip git \
         default-mysql-client postgresql-client \
         ca-certificates apt-transport-https lsb-release gnupg \
  && rm -rf /var/lib/apt/lists/*
 
+# Install Azure Cli and AzCopy tools
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | bash
-
 RUN wget -O azcopy.tar.gz https://aka.ms/downloadazcopy-v10-linux \
     && tar -xf azcopy.tar.gz --strip-components=1 -C /usr/local/bin \
     && rm azcopy.tar.gz
+
+# Install Terraform
+ARG TERRAFORM_VERSION=0.12.28
+ENV TERRAFORM_FILE=terraform_${TERRAFORM_VERSION}_linux_amd64.zip
+RUN wget -q https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/${TERRAFORM_FILE} \
+ && unzip ${TERRAFORM_FILE} -d /usr/local/bin \
+ && rm -rf ${TERRAFORM_FILE}
+
+# Install Kubectl
+ARG KUBECTL_VERSION=v1.17.3
+RUN wget -q https://storage.googleapis.com/kubernetes-release/release/${KUBECTL_VERSION}/bin/linux/amd64/kubectl \
+    --directory-prefix=/usr/local/bin/
+
+# Install Helm
+ARG HELM_VERSION=v3.2.4
+ENV HELM_FILE=helm-${HELM_VERSION}-linux-amd64.tar.gz
+RUN wget -q https://get.helm.sh/${HELM_FILE} \
+ && tar -xf ${HELM_FILE} --strip-components=1 -C /usr/local/bin \
+ && rm ${HELM_FILE}
