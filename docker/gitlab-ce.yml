@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  gitlab-ce:
+    image: 'gitlab/gitlab-ce:latest'
+    #user: root
+    restart: always
+    hostname: 'gitlab.example.com'
+    environment:
+      GITLAB_OMNIBUS_CONFIG: |
+        external_url 'https://gitlab.example.com'
+    ports:
+      - '80:80'
+      - '443:443'
+      - '22:22'
+    volumes:
+      - ./volume/config:/etc/gitlab:Z
+      - ./volume/logs:/var/log/gitlab:Z
+      - ./volume/data:/var/opt/gitlab:Z
