@@ -29,8 +29,8 @@ jobs:
     - name: AZURE push latest image
       run: docker push cosckoya/sysutils:azure
     - name: AZURE push commit image
-      run: docker push cosckoya/azure-${GITHUB_SHA::8}
+      run: docker push cosckoya/sysutils:azure-${GITHUB_SHA::8}
     - name: GCP push latest image
-      run: docker push cosckoya/gcp
+      run: docker push cosckoya/sysutils:gcp
     - name: GCP push commit image
-      run: docker push cosckoya/gcp-${GITHUB_SHA::8}
+      run: docker push cosckoya/sysutils:gcp-${GITHUB_SHA::8}
