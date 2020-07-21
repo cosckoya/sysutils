@@ -1,5 +1,3 @@
-![Docker Image CI](https://github.com/cosckoya/jenkins-ci/workflows/Docker%20Image%20CI/badge.svg)
-
 ```
 ooooooooooooooooooooooooooooooooooooooooooooooooooo+:~+ooooooooooooooooooooooooooooooooooooooooooooo
 ooooooooooooooooooooooooooooooooooooooooooooooooo+.~~~ .oooooooooooooooooooooooooooooooooooooooooooo
