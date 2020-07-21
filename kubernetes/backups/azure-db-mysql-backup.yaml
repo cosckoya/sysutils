@@ -1,0 +1,74 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: dbbackup
+  namespace: cron
+spec:
+  schedule: "0 5 * * *"
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: sys-utils
+            image: cosckoya/sysutils:azure
+            command:
+            - /bin/dbbackup.sh
+            envFrom:
+            - secretRef:
+                name: dbbackup
+            volumeMounts:
+            - name: dbbackup
+              mountPath: /bin/dbbackup.sh
+              readOnly: true
+              subPath: dbbackup.sh
+          restartPolicy: OnFailure
+          volumes:
+          - name: dbbackup
+            configMap:
+              defaultMode: 0700
+              name: dbbackup
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: dbbackup
+  namespace: cron
+data:
+  dbbackup.sh: |-
+    #!/bin/bash
+
+    DATE=$(date +%Y-%m-%d)
+    FILE="$DATE-$DATABASE_SERVER.sql.gz"
+
+    # Dump Database Scheme
+    mysqldump -h $DATABASE_SERVER.mysql.database.azure.com -u $DATABASE_USER $DATABASE_NAME | gzip > $FILE
+
+    # Upload Dump to Blob
+    az storage blob upload -f $FILE -c db-backup -n $FILE --connection-string BLOB_STRING:
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cron
+  namespace: cron
+data:
+  DATABASE_SERVER: <DATABASE_HOSTNAME>
+  DATABASE_NAME: <DATABASE_NAME>
+---
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: cron
+  namespace: cron
+data:
+  BLOB_STRING: <STORAGE_ACCOUNT_BLOB_STRING>
+  MYSQL_PWD: <DATABASE_MYSQL_PASSWORD>
+  DATABASE_USER: <DATABASE_USER>
+
+
+

@@ -1,0 +1,72 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: assetsbackup
+  namespace: cron
+spec:
+  schedule: "0 5 * * *"
+  concurrencyPolicy: Forbid
+  failedJobsHistoryLimit: 1
+  successfulJobsHistoryLimit: 3
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: sys-utils
+            image: cosckoya/sysutils:azure
+            command:
+            - /bin/assetsbackup.sh
+            envFrom:
+            - secretRef:
+                name: cron
+            - configMapRef:
+                name: cron
+            volumeMounts:
+            - name: assetsbackup
+              mountPath: /bin/assetsbackup.sh
+              readOnly: true
+              subPath: assetsbackup.sh
+          restartPolicy: OnFailure
+          volumes:
+          - name: assetsbackup
+            configMap:
+              defaultMode: 0700
+              name: assetsbackup
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: assetsbackup
+  namespace: cron
+data:
+  assetsbackup.sh: |-
+    #!/bin/bash
+    DATE=$(date +%Y-%m-%d)
+    FILE="$DATE-$BLOB_STRING_ORIGIN.sql.gz"
+
+    azcopy copy "https://$BLOB_STRING_ORIGIN.blob.core.windows.net/$CONTAINER" --recursive "./"
+
+    tar -zcvf $FILE $CONTAINER
+
+    # Upload Dump to Blob
+    az storage blob upload -f $FILE -c backups -n $FILE --connection-string $BLOB_STRING_DESTINATION
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cron
+  namespace: cron
+data:
+  CONTAINER: <CONTAINER_NAME>
+  BLOB_NAME: <BLOB_NAME>
+---
+apiVersion: v1
+kind: Secret
+type: Opaque
+metadata:
+  name: cron
+  namespace: cron
+data:
+  BLOB_STRING_ORIGIN: <STORAGE_ACCOUNT_BLOB_STRING_ORIGIN>
+  BLOB_STRING_DESTINATION: <STORAGE_ACCOUNT_BLOB_STRING_DESTINATION>
