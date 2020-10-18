@@ -7,7 +7,7 @@
 ## Wiki
 
 - [x] [helloworld](./res/helloworld.md)
-- [] [git](res/git.md)
+- [ ] [git](res/git.md)
 
 ---
 
