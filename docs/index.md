@@ -6,9 +6,13 @@
 
 ## Wiki
 - [helloworld](res/helloworld.md)
+- [awesome](res/awesome.md)
 - [git](res/git.md)
 - [hack](res/hack.md)
+- [kubernetes](res/kubernetes.md)
 - [terraform](res/terraform.md)
+- [tools](res/tools.md)
+- [zsh](res/zsh.md)
 
 ## Resources
 - [github](https://github.com)
