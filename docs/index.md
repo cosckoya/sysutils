@@ -13,20 +13,12 @@
 ## Resources
 
 ### Linux
-- [ ] [git](res/git.md)
-
-
-
 ### Networking
 ### Python
 ### Cloud
 ### Containers
 
-
-
-
-
-
+---
 ## Best Emojis
 
 People
