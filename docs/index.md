@@ -1,7 +1,7 @@
 ## Klaatu Barata Nitko!
 
 <p align="center">
-  <img src="image/welcome.jpg?raw=true"/>
+  <img src="img/welcome.jpg?raw=true"/>
 </p>
 
 
