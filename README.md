@@ -1,4 +1,3 @@
-<p align="justify">
 ```
           .                                                      .
         .n                   .                 .                  n.
@@ -23,4 +22,3 @@ dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
                                `             '
 
 ```
-</p>
