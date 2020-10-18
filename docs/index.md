@@ -1,6 +1,10 @@
 ## Klaatu Barata Nitko!
 
-![Image](image/welcome.jpg)
+<p align="center">
+  <img src="image/welcome.jpg?raw=true"/>
+</p>
+
+
 ---
 
 You can use the [editor on GitHub](https://github.com/cosckoya/tools/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
