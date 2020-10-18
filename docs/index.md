@@ -1,33 +1,13 @@
-## Klaatu Barata Nitko!
+# Klaatu Barata Nitko!
 
 <p align="center">
   <img src="img/welcome.jpg?raw=true"/>
 </p>
 
-[helloworld](./res/helloworld.md)
-[git](res/git.md)
----
+## Wiki
 
-* an asterisk starts an unordered list
-* and this is another item in the list
-+ or you can also use the + character
-- or the - character
-
-To start an ordered list, write this:
-
-1. this starts a list *with* numbers
-+  this will show as number "2"
-*  this will show as number "3."
-9. any number, +, -, or * will keep the list going.
-    * just indent by 4 spaces (or tab) to make a sub-list
-        1. keep indenting for more sub lists
-    * here i'm back to the second level
-
-To start a check list, write this:
-
-- [ ] this is not checked
-- [ ] this is too
-- [x] but this is checked
+- [x] [helloworld](./res/helloworld.md)
+- [] [git](res/git.md)
 
 ---
 
