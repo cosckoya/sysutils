@@ -1,50 +1,24 @@
 ```
-ooooooooooooooooooooooooooooooooooooooooooooooooooo+:~+ooooooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooooooo+.~~~ .oooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooo+ ++::: .ooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooo.:+:::~~ +oooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooooo+ ++:::~~ ~oooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooooo.~+++:::~. oooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooooo ++++::~~~ +ooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooo~~++++::~~~..ooooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooo+ +++++:::~~~ +oooooooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooooooooooo :+++++:::~~~ .oooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooo.:+++++++::~~~~ +ooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooo+ :++++++:+:::~~~. ooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooo+:~++++++++++::~~~~~ .oooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooo+~~:+++++++++++::::~~~~ ~ooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooo++~~:++++++++++++++::::~~~.~ .+ooooooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooo++::~::+++++++++++++++++:::::~~~.~. .:+oooooooooooooooooooooooooooooooo
-ooooooooooooooooooooooooo+::~::++++oo++++++++++++++++:::::~~~~...~...~:+oooooooooooooooooooooooooooo
-ooooooooooooooooooooo+:~~:+++++o++++++++++++++++++++:++::::~:~~~~..~~~~..~::++oooooooooooooooooooooo
-ooooooooooooooooo++~~:++++++++++o++++++++++++++++++++::+:::::~~~~.~..~.~~~.~..~~~:+ooooooooooooooooo
-ooooooooooooooo+~~:++++++o+++oo++oo++++++++++++++++::+::::~:::~~~~~.........~~~~:~~~~+oooooooooooooo
-oooooooooooo+:.:++++++++++ooooo+++++++++++++++++++++::::::::~~:~~~~~~.~..........~~::~.:+ooooooooooo
-oooooooooo+~.:+++++++o+oooo+++++++++++++++++++++++:+:++::::::::~~~:~~~~~~~~.........~~::~.+ooooooooo
-ooooooooo~.:+++++++oo++oo+o+++++++++++++++++++++++:++::::::::::~~:~~~~~~~~............~~+:~.+ooooooo
-ooooooo+.:++++++++++++o+++++++++++++++++++++++++:++::++::::::~:~~:::~~~~~.~~~.~..........:+:.:oooooo
-oooooo..+++++++++++o+o+++++++++++++++++::::::++++:+::+:::~..~~~~...~~~~~~~.~.~............~:+.~ooooo
-ooooo.~+++++++++++++++++++++++++++++~~:+++:::~.:++:++:+~.:+oooooo+: .:~~~~~~~.~~...........~:+ :oooo
-oooo.~++++++++++++++++++++++++++++~~+ooooooooo+..+:::+.~ooooo+oooooo. ~~~~~..~..........~..~~:+ +ooo
-ooo.~++++++++++++++++++++++++++++.~ooooo+++ooooo..+:+~.ooo+.   ~+oooo .~~.~.~.~.........~~~..:+: ooo
-oo+ +++++++++++++++++++++++++++++ oooo+     +ooo+ +:+.:ooo      ~oooo .~~~.~..~.......~~~::~~~:+ +oo
-oo.~+++++++++++++++++++++++++++++.oooo.     ~ooo+ +:+..ooo:     +ooo+ ~~~.~.~.........~::+::~~:+ +oo
-oo ++++++++++++++++++++++++++++++.:ooo+:...:oooo..+:+: ~+oooo++oooo+ .~~.~..~...~....~~:+++:~~:+ +oo
-oo :++++++++++++++++++++++++++++++ ~oooooooooo+..+::::+..:++ooo++:. ~~~~~~.~..~......~:++++:~:++ ooo
-oo +++:+:++++++++++++++++++++++++++~.~+++++++~.~+:+::::::~........~:~~.. ...........~~+++++:~:+.:ooo
-oo~.+:::+++++++++++++++++++++++++++++:~...~~~:++::+::++::::::::~:~~.        ~..~....:++++++::+: oooo
-oo+ ++:::::++++++++++++++++++++....~~+++++++++::::::::::::::::~:.. ..~..    ......~:++++++:~:+ +oooo
-ooo~.+:::~:::+:++++++++++++:+:       ..~::::::+:++:::::::::~~.. ..::::::~  .~...~~::+++++::++.:ooooo
-oooo.~++:~:~:::::::++:++++:++~  ..~~:~~....~~~~:::::~:~~.......:::::::~.  ..~..~::++++++::+:.:oooooo
-ooooo~.+++::~~::::::::::::::::~  .::::::::~~~~.... .......~::::::::~.. ...~..~~::++++++:++:.+ooooooo
-oooooo+.:+++::~~~:::::::::::::::~...~~::::::::::::::~::::+:::::~~.. ...~~..~~~:+++++:+++:.~ooooooooo
-oooooooo:~~:+++:~~~~~~:~:::::::::::~......~~~::~~::::::~~~~....  ...~.~..~~~:::::::+++:.:+oooooooooo
-oooooooooo+:~~:+++::~~~~~~:~:~~::~::::::~~........ ... .... ..~.~~...~....~~~:~:++++~~:ooooooooooooo
-ooooooooooooo+:~~:++++::~~~~~~~~~~~~~~~~~::~~~~~.~~~..~~..~...........~.~~::++++:~~:+ooooooooooooooo
-oooooooooooooooo++:~~::++++++:::::~~~~~~~~~.~~~~~.~~.~~.....~.~~~~~:::++++++:~~::+oooooooooooooooooo
-oooooooooooooooooooo+++:::~:::++++++++++++:+:+::+:::+:::+++++++++++:+::::~::++oooooooooooooooooooooo
-oooooooooooooooooooooooooo++++:::~~:~:::::::::::::::::::::::~::~::::++++oooooooooooooooooooooooooooo
-ooooooooooooooooooooooooooooooooooooo+++++++++++++++++++++++o+oooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+          .                                                      .
+        .n                   .                 .                  n.
+  .   .dP                  dP                   9b                 9b.    .
+ 4    qXb         .       dX                     Xb       .        dXp     t
+dX.    9Xb      .dXb    __                         __    dXb.     dXP     .Xb
+9XXb._       _.dXXXXb dXXXXbo.                 .odXXXXb dXXXXb._       _.dXXP
+ 9XXXXXXXXXXXXXXXXXXXVXXXXXXXXOo.           .oOXXXXXXXXVXXXXXXXXXXXXXXXXXXXP
+  `9XXXXXXXXXXXXXXXXXXXXX'~   ~`OOO8b   d8OOO'~   ~`XXXXXXXXXXXXXXXXXXXXXP'
+    `9XXXXXXXXXXXP' `9XX'   DIE    `98v8P'  HUMAN   `XXP' `9XXXXXXXXXXXP'
+        ~~~~~~~       9X.          .db|db.          .XP       ~~~~~~~
+                        )b.  .dbo.dP'`v'`9b.odb.  .dX(
+                      ,dXXXXXXXXXXXb     dXXXXXXXXXXXb.
+                     dXXXXXXXXXXXP'   .   `9XXXXXXXXXXXb
+                    dXXXXXXXXXXXXb   d|b   dXXXXXXXXXXXXb
+                    9XXb'   `XXXXXb.dX|Xb.dXXXXX'   `dXXP
+                     `'      9XXXXXX(   )XXXXXXP      `'
+                              XXXX X.`v'.X XXXX
+                              XP^X'`b   d'`X^XX
+                              X. 9  `   '  P )X
+                              `b  `       '  d'
+                               `             '
+
 ```
