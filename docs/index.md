@@ -11,14 +11,13 @@
 
 ## Resources
 
-### :penguin: Linux 
+### Linux 
 
 - [RedHat Developers](https://developers.redhat.com)
 
 ### Networking
 
 - [IP Calculator](http://jodies.de/ipcalc)
-
 
 ### Web
 
