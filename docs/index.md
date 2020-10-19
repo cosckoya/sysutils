@@ -1,68 +1,65 @@
-## Klaatu Barata Nitko!
+# Klaatu Barata Nitko!
 
 <p align="center">
   <img src="img/welcome.jpg?raw=true"/>
 </p>
 
-[helloworld](./res/helloworld.md)
-[git](res/git.md)
----
+## Wiki
+- [helloworld](res/helloworld.md)
+- [awesome](res/awesome.md)
+- [git](res/git.md)
+- [hack](res/hack.md)
+- [kubernetes](res/kubernetes.md)
+- [terraform](res/terraform.md)
+- [tools](res/tools.md)
+- [zsh](res/zsh.md)
 
-* an asterisk starts an unordered list
-* and this is another item in the list
-+ or you can also use the + character
-- or the - character
+## Resources
+- [github](https://github.com)
+- [gitlab](https://gitlab.com)
+- [dockerhub](https://hub.docker.com)
 
-To start an ordered list, write this:
+## Useful Gits
+- [Gitignore Templates](https://github.com/github/gitignore)
+- [Helm](https://github.com/helm) 
+- [Kubernetes SIGs](https://github.com/kubernetes-sigs)
+- [Pre-Commit](https://github.com/pre-commit) 
+- [Cheat](https://github.com/cheat)
+- [Google GCP](https://github.com/GoogleCloudPlatform)
+- [Azure](https://github.com/Azure)
 
-1. this starts a list *with* numbers
-+  this will show as number "2"
-*  this will show as number "3."
-9. any number, +, -, or * will keep the list going.
-    * just indent by 4 spaces (or tab) to make a sub-list
-        1. keep indenting for more sub lists
-    * here i'm back to the second level
+## Awesome Gits
+- [Awesome](https://github.com/sindresorhus/awesome)
+- [ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins)
+- [Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
+- [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
+- [Kubernetes Operators](https://github.com/operator-framework/awesome-operators)
+- [Kubernetes Plugins](https://github.com/ishantanu/awesome-kubectl-plugins)
+- [GH Actions](https://github.com/sdras/awesome-actions)
+- [Git Hooks](https://github.com/aitemr/awesome-git-hooks)
+- [Helm](https://github.com/cdwv/awesome-helm)
+- [Ansible](https://github.com/KeyboardInterrupt/awesome-ansible)
+- [Terraform](https://github.com/shuaibiyy/awesome-terraform)
+- [Python](https://github.com/vinta/awesome-python)
 
-To start a check list, write this:
+## Tech
+- [Dev.to](https://dev.to)
+- [Hackaday.io](https://hackaday.io)
+- [Hackster.io](https://www.hackster.io)
+- [Gbatemp](https://gbatemp.net)
 
-- [ ] this is not checked
-- [ ] this is too
-- [x] but this is checked
+## Learning
+- [CNCF](https://landscape.cncf.io)
+- [RedHat Developers](https://developers.redhat.com)
+- [Hackr.io](https://hackr.io)
+- [Hashicorp](https://learn.hashicorp.com)
+- [Mozilla Developers](https://developer.mozilla.org)
+- [Raspberry PI](https://projects.raspberrypi.org)
 
----
-
-You can use the [editor on GitHub](https://github.com/cosckoya/tools/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/cosckoya/tools/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Tools
+- [ASCII Art](http://patorjk.com/software/taag)
+- [httpstatus](https://httpstatus.io)
+- [IP Calculator](http://jodies.de/ipcalc)
+- [Mozilla SSL](https://ssl-config.mozilla.org)
+- [ping.eu](https://ping.eu)
+- [Reqbin](https://reqbin.com)
