@@ -6,7 +6,7 @@
 
 - [Linux](res/linux/index.md)
   - [Shell](res/linux/shell.md)
-  - [Networking](res/linux/networking.md)
+  - [Network](res/linux/network.md)
   - [Storage](res/linux/storage.md)
   - [Databases](res/linux/databases.md)
   - [Tools](res/linux/tools.md)
@@ -68,9 +68,8 @@
 - [Raspberry PI](https://projects.raspberrypi.org)
 
 ## Tools
-- [ASCII Art](http://patorjk.com/software/taag)
+
 - [httpstatus](https://httpstatus.io)
-- [IP Calculator](http://jodies.de/ipcalc)
 - [Mozilla SSL](https://ssl-config.mozilla.org)
 - [ping.eu](https://ping.eu)
 - [Reqbin](https://reqbin.com)

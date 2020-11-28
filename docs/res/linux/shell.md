@@ -12,6 +12,8 @@
    Y88  ':88888
 _________888P__________________________________________________
 ```
+## SetUp my customized ZSH shell profile
+- [Cosckoya's Dotfiles](https://github.com/cosckoya/.dotfiles)
 
 ## Useful scripts
 ### Get Colors from Shell

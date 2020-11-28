@@ -13,5 +13,12 @@
 _________888P__________________________________________________
 ```
 ## Index
+- [Shell](shell.md)
+- [Storage](storage.md)
+- [Network](network.md)
+- [Databases](databases.md)
+- [Tools](tools.md)
 
 ## References
+- [ASCII Art](http://patorjk.com/software/taag)
+- [IP Calculator](http://jodies.de/ipcalc)
