@@ -12,13 +12,7 @@
    Y88  ':88888
 _________888P__________________________________________________
 ```
-## Index
-## References
-- [Awesome Shell](https://github.com/alebcay/awesome-shell)
-- [Bash](https://tiswww.case.edu/php/chet/bash/bashtop.html)
-- [Awesome Bash](https://github.com/awesome-lists/awesome-bash)
-- [ZSH](https://www.zsh.org/)
-- [Awesome ZSH](https://github.com/unixorn/awesome-zsh-plugins)
+
 ## Useful scripts
 ### Get Colors from Shell
 ```bash
@@ -33,3 +27,9 @@ for x in {0..8}; do
   done;
 done
 ```
+## References
+- [Awesome Shell](https://github.com/alebcay/awesome-shell)
+- [Bash](https://tiswww.case.edu/php/chet/bash/bashtop.html)
+- [Awesome Bash](https://github.com/awesome-lists/awesome-bash)
+- [ZSH](https://www.zsh.org/)
+- [Awesome ZSH](https://github.com/unixorn/awesome-zsh-plugins)

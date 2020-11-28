@@ -4,7 +4,6 @@
   <img src="img/welcome.jpg?raw=true"/>
 </p>
 
-## Wiki
 - [Linux](res/linux/index.md)
   - [Shell](res/linux/shell.md)
   - [Networking](res/linux/networking.md)
@@ -23,8 +22,7 @@
   - [SSL](res/security/ssl.md)
   - [Web Pentesting](res/security/web.md)
 
-## References
-- [Bookmarks](res/bookmarks.md)
+- [References](res/bookmarks.md)
 
 ## Resources
 - [Github](https://github.com)
