@@ -5,14 +5,11 @@
 </p>
 
 ## Wiki
-- [helloworld](res/helloworld.md)
-- [awesome](res/awesome.md)
-- [git](res/git.md)
-- [hack](res/hack.md)
-- [kubernetes](res/kubernetes.md)
-- [terraform](res/terraform.md)
-- [tools](res/tools.md)
-- [zsh](res/zsh.md)
+- [shell](res/shell/index.md)
+- [linux](res/linux/index.md)
+- [cloud](res/cloud/index.md)
+- [databases](res/databases/index.md)
+- [security](res/security/index.md)
 
 ## Resources
 - [github](https://github.com)
