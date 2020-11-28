@@ -5,16 +5,19 @@
 </p>
 
 ## Wiki
-- [shell](res/shell/index.md)
-- [linux](res/linux/index.md)
-- [cloud](res/cloud/index.md)
-- [databases](res/databases/index.md)
-- [security](res/security/index.md)
+- [Shell](res/shell/index.md)
+- [Linux](res/linux/index.md)
+- [Cloud](res/cloud/index.md)
+- [Databases](res/databases/index.md)
+- [Security](res/security/index.md)
+- - [SSL](ssl.md)
+- - [Web Pentesting](web.md)
 
 ## Resources
-- [github](https://github.com)
-- [gitlab](https://gitlab.com)
-- [dockerhub](https://hub.docker.com)
+- [Github](https://github.com)
+- [Gitlab](https://gitlab.com)
+- [BitBucket](https://bitbucket.org/)
+- [Dockerhub](https://hub.docker.com)
 
 ## Useful Gits
 - [Gitignore Templates](https://github.com/github/gitignore)
