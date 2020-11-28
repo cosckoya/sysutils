@@ -21,9 +21,9 @@
 
 ## Useful Gits
 - [Gitignore Templates](https://github.com/github/gitignore)
-- [Helm](https://github.com/helm) 
+- [Helm](https://github.com/helm)
 - [Kubernetes SIGs](https://github.com/kubernetes-sigs)
-- [Pre-Commit](https://github.com/pre-commit) 
+- [Pre-Commit](https://github.com/pre-commit)
 - [Cheat](https://github.com/cheat)
 - [Google GCP](https://github.com/GoogleCloudPlatform)
 - [Azure](https://github.com/Azure)
