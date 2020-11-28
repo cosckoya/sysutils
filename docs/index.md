@@ -10,6 +10,7 @@
 - - [Networking](res/linux/networking.md)
 - - [Storage](res/linux/storage.md)
 - - [Databases](res/linux/databases.md)
+- - [Tools](res/linux/tools.md)
 - [Containers](res/containers/index.md)
 - - [Docker](res/containers/docker.md)
 - - [Kubernetes](res/containers/kubernetes.md)
