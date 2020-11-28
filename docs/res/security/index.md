@@ -13,7 +13,7 @@
 _________888P__________________________________________________
 ```
 ## Index
-- [ssl](res/security/ssl.md)
-- [web](res/security/web.md)
+- [ssl](ssl.md)
+- [web](web.md)
 
 ## References
