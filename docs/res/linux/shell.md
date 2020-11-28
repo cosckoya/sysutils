@@ -20,7 +20,7 @@ _________888P__________________________________________________
 - [ZSH](https://www.zsh.org/)
 - [Awesome ZSH](https://github.com/unixorn/awesome-zsh-plugins)
 ## Useful scripts
-#### Get Colors from Shell
+### Get Colors from Shell
 ```bash
 #!/bin/bash
 

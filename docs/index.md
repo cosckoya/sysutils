@@ -6,22 +6,22 @@
 
 ## Wiki
 - [Linux](res/linux/index.md)
-- - [Shell](res/linux/shell.md)
-- - [Networking](res/linux/networking.md)
-- - [Storage](res/linux/storage.md)
-- - [Databases](res/linux/databases.md)
-- - [Tools](res/linux/tools.md)
+  - [Shell](res/linux/shell.md)
+  - [Networking](res/linux/networking.md)
+  - [Storage](res/linux/storage.md)
+  - [Databases](res/linux/databases.md)
+  - [Tools](res/linux/tools.md)
 - [Containers](res/containers/index.md)
-- - [Docker](res/containers/docker.md)
-- - [Kubernetes](res/containers/kubernetes.md)
+  - [Docker](res/containers/docker.md)
+  - [Kubernetes](res/containers/kubernetes.md)
 - [Cloud](res/cloud/index.md)
-- - [IaC](res/cloud/tools.md)
-- - [AWS](res/cloud/aws.md)
-- - [Azure](res/cloud/azure.md)
-- - [Google](res/cloud/google.md)
+  - [IaC](res/cloud/tools.md)
+  - [AWS](res/cloud/aws.md)
+  - [Azure](res/cloud/azure.md)
+  - [Google](res/cloud/google.md)
 - [Security](res/security/index.md)
-- - [SSL](res/security/ssl.md)
-- - [Web Pentesting](res/security/web.md)
+  - [SSL](res/security/ssl.md)
+  - [Web Pentesting](res/security/web.md)
 
 ## References
 - [Bookmarks](res/bookmarks.md)
@@ -43,7 +43,7 @@
 
 ## Awesome Gits
 - [Awesome](https://github.com/sindresorhus/awesome)
-- [ZSH Plugins](https://github.com/unixorn/awesome-zsh-plugins)
+
 - [Hacking](https://github.com/Hack-with-Github/Awesome-Hacking)
 - [Kubernetes](https://github.com/ramitsurana/awesome-kubernetes)
 - [Kubernetes Operators](https://github.com/operator-framework/awesome-operators)
