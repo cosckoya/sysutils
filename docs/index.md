@@ -1,4 +1,4 @@
-# Klaatu Barata Nitko!
+# Klaatu Barada Nitko!
 
 <p align="center">
   <img src="img/welcome.jpg?raw=true"/>
@@ -10,8 +10,8 @@
 - [Cloud](res/cloud/index.md)
 - [Databases](res/databases/index.md)
 - [Security](res/security/index.md)
-- - [SSL](ssl.md)
-- - [Web Pentesting](web.md)
+- - [SSL](res/security/ssl.md)
+- - [Web Pentesting](res/security/web.md)
 
 ## Resources
 - [Github](https://github.com)
