@@ -1,19 +1,48 @@
 # Shell
-```markdown
-          ===.
-      =====.==`.               __,------._
-         ===`.8=);   _/)    .-'           ``-.
-         _ (G^ @@__ / '.  .' By Toutatis, the `.
-   ,._,-'_`-/,-^( _).__: .' druid's potion has :
-  (    / .MMm.Y_)/      ,'   turned me into    |
-   `'(|.oMMMM       __,',-'`._  ascii art!   ,'
-   d88:'mOom        `--'      `-..______,--''
-   88::(::\d88b
-   Y88  ':88888
-_________888P__________________________________________________
-```
+
 ## SetUp my customized ZSH shell profile
 - [Cosckoya's Dotfiles](https://github.com/cosckoya/.dotfiles)
+
+## Common Statements
+
+### For
+
+Run a command in between "$(command)" to iterate:
+
+```bash
+#!/bin/bash
+for i in $( ls -1 ); do
+  echo $i
+done
+```
+
+Run a sequence in between "seq 1 10" to iterate:
+```bash
+#!/bin/bash
+for i in `seq 1 10`; do
+  echo $i
+done
+```
+
+### While
+```bash
+#!/bin/bash
+COUNTER=0
+while [  $COUNTER -lt 10 ]; do
+    echo The counter is $COUNTER
+    let COUNTER=COUNTER+1
+done
+```
+
+### Until
+```bash
+#!/bin/bash
+COUNTER=20
+until [  $COUNTER -lt 10 ]; do
+    echo COUNTER $COUNTER
+    let COUNTER-=1
+done
+```
 
 ## Useful scripts
 ### Get Colors from Shell
