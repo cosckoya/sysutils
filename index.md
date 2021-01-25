@@ -1,7 +1,7 @@
 # Klaatu Barada Nitko!
 
 <p align="center">
-  <img src="img/welcome.jpg?raw=true"/>
+  <img src="res/img/welcome.jpg?raw=true"/>
 </p>
 
 - [Linux](res/linux/index.md)
