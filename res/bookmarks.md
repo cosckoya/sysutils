@@ -6,13 +6,8 @@
   * [Tech](#tech)
   * [Learning](#learning)
   * [Tools](#tools)
----
-## Resources
-- [Github](https://github.com)
-- [Gitlab](https://gitlab.com)
-- [BitBucket](https://bitbucket.org/)
-- [Dockerhub](https://hub.docker.com)
 
+---
 ## Useful Gits
 - [Gitignore Templates](https://github.com/github/gitignore)
 - [Helm](https://github.com/helm)
